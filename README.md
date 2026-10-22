@@ -31,8 +31,7 @@ rating of the courses they sold.
 | Enrollment Influence Ratio | share of enrolments from High-tier instructors / their share of instructors |
 
 ## Deploy
-**Streamlit Community Cloud**: run `make sanitize` (strips emails/usernames from `Users.csv`), push to GitHub,
-then share.streamlit.io -> New app -> main file `app.py`, Python 3.12.
+**Streamlit Community Cloud**: https://education-analytics-dashboard-maqvty8smu8ncxozmshhus.streamlit.app/
 
 **Google Cloud Run**: `gcloud run deploy edupro --source . --region <region> --allow-unauthenticated`
 (drop `--allow-unauthenticated` and use IAM / IAP for a private government deployment).
