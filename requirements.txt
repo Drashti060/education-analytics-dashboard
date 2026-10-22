@@ -1,0 +1,8 @@
+# Runtime dependencies. For fully reproducible deploys generate a lock file:
+#   pip-compile requirements.txt -o requirements.lock
+streamlit>=1.40,<2.0
+pandas>=2.2,<4.0
+numpy>=1.26,<3.0
+scipy>=1.11,<2.0
+plotly>=5.24,<7.0
+matplotlib>=3.8,<4.0
