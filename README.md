@@ -14,7 +14,8 @@ streamlit run app.py           # http://localhost:8501
 ## Architecture
 - `edupro/data.py` - ingest (glob-matched filenames, PII dropped), validation report, m:1-checked joins
 - `edupro/metrics.py` - KPIs and aggregations (pure functions, unit-tested)
-- `app.py` - dashboard; `scripts/run_eda.py` - reproducible EDA for the research paper
+- `app.py` - dashboard;
+- `scripts/run_eda.py` - reproducible EDA for the research paper
 
 ## Data model caveat
 Instructors and courses are linked only through `Transactions`, and every course is sold under 7-30 different
@@ -32,6 +33,3 @@ rating of the courses they sold.
 
 ## Deploy
 **Streamlit Community Cloud**: https://education-analytics-dashboard-maqvty8smu8ncxozmshhus.streamlit.app/
-
-**Google Cloud Run**: `gcloud run deploy edupro --source . --region <region> --allow-unauthenticated`
-(drop `--allow-unauthenticated` and use IAM / IAP for a private government deployment).
